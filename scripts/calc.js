@@ -18,7 +18,13 @@ function Calcular() {
   var mediaRounded = parseFloat(media.toFixed(1));
 
   // imprimir resultado no HTML
+  var notaFinal;
   var mediaCalculada = document.getElementById("notaFinal");
-  var notaFinal = `Sua média final é ${mediaRounded}`;
+  if (isNaN(mediaRounded)) {
+    notaFinal = `Sua média final não pode ser calculada, por favor digite os valores das notas nos campos`;
+  } else {
+    notaFinal = `Sua média final é ${mediaRounded}`;
+  }
+
   mediaCalculada.innerHTML = notaFinal;
 }
