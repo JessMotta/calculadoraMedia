@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  /* padding: 20px; */
+  padding: 20px;
 }
 
 .calc__image {
@@ -75,4 +75,36 @@ body {
   font-size: 1.5rem;
   padding: 1.25rem;
   align-self: center;
+  line-height: 2rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  .calc__image{
+    width: 300px;
+    height: 300px;
+  }
+
+  .calc__result{
+    width: 30%;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .calc{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .calc__image{
+    width: 250px;
+    height: 250px;
+  }
+
+  .calc__result{
+    width: 100%;
+    font-size: 1.5rem;
+  }
+   
 }
