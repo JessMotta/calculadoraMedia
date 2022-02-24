@@ -19,23 +19,23 @@
         <h1 class="header__title">Calculadora Média</h1>
         <p class="header__subtitle">Aqui você irá descobrir sua média</p>
     </div>
-    <div class="image">Logo</div>
+    <!-- <div class="image">Logo</div> -->
     <div class="calc">
         <div class="calc__image"></div>
         <div class="calc__data">
-            <h4>Nota 1:</h4>
-            <input id="nota1" type="number" size="2">
-            <h4>Nota 2:</h4>
-            <input id="nota2" type="number" size="2">
-            <h4>Nota 3:</h4>
-            <input id="nota3" type="number" size="2">
-            <h4>Nota 4:</h4>
-            <input id="nota4" type="number" size="2">
+            <h4 class="calc__label">Nota 1:</h4>
+            <input class="calc__input" id="nota1" type="number" size="2">
+            <h4  class="calc__label">Nota 2:</h4>
+            <input class="calc__input" id="nota2" type="number" size="2">
+            <h4  class="calc__label">Nota 3:</h4>
+            <input class="calc__input" id="nota3" type="number" size="2">
+            <h4  class="calc__label">Nota 4:</h4>
+            <input class="calc__input" id="nota4" type="number" size="2">
             <br>
-            <button type="submit" onclick="Calcular()">Calcular</button>
+            <button class="calc__button" type="submit" onclick="Calcular()">Calcular</button>
         </div>
 
-        <h2 id="notaFinal"></h2>
+        <h2 class="calc__result" id="notaFinal"></h2>
 
     </div>
 </body>
